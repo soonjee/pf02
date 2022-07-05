@@ -1,0 +1,39 @@
+.header {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.header .header_top {
+    display: flex;
+    line-height: 28px;
+}
+
+.header .container {
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+}
+
+.header .container figure:nth-child(1) {
+    margin: 0 40px 0 0;
+    width: 58px;
+    height: 10px;
+}
+
+.header .container figure:nth-child(2) {
+    width: 58px;
+    height: 10px;
+}
+
+.header .container nav {
+    margin: 0 0 0 auto;
+}
+
+
+.header .container nav>ul {
+    display: flex;
+    gap: 40px;
+    font-size: 13px;
+    font-weight: 300;
+}

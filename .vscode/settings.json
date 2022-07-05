@@ -1,0 +1,4 @@
+{
+    "css.format.enable": true,
+    "css.completion.triggerPropertyValueCompletion": false
+}
