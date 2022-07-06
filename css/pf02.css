@@ -1,18 +1,22 @@
 .header {
+    position: absolute;
     width: 1400px;
-    margin: 0 auto;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
 }
 
 .header .header_top {
     display: flex;
     line-height: 28px;
+    border-bottom: 1px solid #fff;
 }
 
 .header .container {
     display: flex;
     width: 1400px;
     margin: 0 auto;
-    border-bottom: 1px solid #fff;
 }
 
 .header .container figure:nth-child(1) {
@@ -30,10 +34,145 @@
     margin: 0 0 0 auto;
 }
 
-
 .header .container nav>ul {
     display: flex;
     gap: 40px;
     font-size: 13px;
     font-weight: 300;
+}
+
+.header .header_bottom {
+    display: flex;
+}
+
+.header .header_bottom {
+    padding: 40px 0;
+}
+
+.header .header_bottom .container {
+    width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header .header_bottom h1 {
+    margin: 0 auto 0 auto;
+}
+
+
+#searchForm input[type="text"] {
+    background: transparent;
+    outline: #333;
+    width: 130px;
+    height: 23px;
+    border-radius: 50px;
+    font-size: 9px;
+    font-weight: 100;
+}
+
+#searchForm button {
+    background: transparent;
+    /*  background: transparent; 투명해짐 */
+    outline: none;
+    border: none;
+    font-size: 13px;
+}
+
+.header .gnb {
+    padding: 16px 0;
+
+}
+
+.header .gnb>ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.visual_slider figure {
+    height: 850px;
+}
+
+.visual_slider .item01 {
+    background: url(../img/main_slides01.jpg) no-repeat center center/cover;
+}
+
+.visual_slider .item02 {
+    background: url(../img/main_slides02.jpg) no-repeat center center/cover;
+}
+
+.visual_slider .item03 {
+    background: url(../img/main_slides03.jpg) no-repeat center center/cover;
+}
+
+.visual_slider .item04 {
+    background: url(../img/main_slides04.jpg) no-repeat center center/cover;
+}
+
+.visual_slider .item05 {
+    background: url(../img/main_slides05.jpg) no-repeat center center/cover;
+}
+
+.main {
+    position: relative;
+}
+
+.main .slick-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.main .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #999;
+    border-radius: 20px;
+}
+
+.main .slick-dots li button {
+    display: none;
+}
+
+.main .visual_control i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 40px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.main .visual_control i:nth-child(1) {
+    margin: 0 0 0 -680px;
+}
+
+.main .visual_control i:nth-child(2) {
+    margin: 0 0 0 680px;
+}
+
+.coupon {
+    height: 700px;
+    background-color: #006633;
+    padding: 100px 0;
+}
+
+.coupon .coupon_slider {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.coupon_slider h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
 }

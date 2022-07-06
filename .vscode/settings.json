@@ -1,4 +1,5 @@
 {
     "css.format.enable": true,
-    "css.completion.triggerPropertyValueCompletion": false
+    "css.completion.triggerPropertyValueCompletion": false,
+    "liveServer.settings.port": 5501
 }

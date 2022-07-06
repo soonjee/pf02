@@ -43,18 +43,75 @@
                 </div>
             </div>
 
-
             <div class="header_bottom">
-                <h1>
-                    <a href="/">
-                        <img src="../pf02/img/logo.png" alt="">
-                    </a>
-                </h1>
-
+                <div class="container">
+                    <h1>
+                        <a href="/">
+                            <img src="./img/logo02.png" alt="">
+                        </a>
+                    </h1>
+                    <div id="searchForm">
+                        <form action="javascript:searchAction()">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                            <button>
+                                <i class="xi-search"></i>
+                            </button>
+                        </form>
+                        <script>
+                            function searchAction() {
+                                var searchValue = $('#searchForm input').val();
+                                if (searchValue.length < 5) {
+                                    alert('더 입력해');
+                                }
+                                else {
+                                    alert(searchValue)
+                                }
+                                $('#searchForm input').val('');
+                                $('#searchForm input').focus();
+                            }
+                        </script>
+                    </div>
+                </div>
             </div>
-
+            <nav class="gnb">
+                <ul>
+                    <li><a href="">NEW</a></li>
+                    <li><a href="">마이 케이크 </a></li>
+                    <li><a href="">베스트 </a></li>
+                    <li><a href="">비건 Vegan</a></li>
+                    <li><a href="">컵</a></li>
+                    <li><a href="">바</a></li>
+                    <li><a href="">전체상품</a></li>
+                    <li><a href="">파인트</a></li>
+                </ul>
+            </nav>
         </header>
+
         <main>
+            <section class="main">
+                <div class="visual_slider">
+                    <figure class="item01"></figure>
+                    <figure class="item02"></figure>
+                    <figure class="item03"></figure>
+                    <figure class="item04"></figure>
+                    <figure class="item05"></figure>
+                </div>
+                <div class="visual_control">
+                    <i class="xi-angle-left"></i>
+                    <i class="xi-angle-right"></i>
+                </div>
+            </section>
+
+            <section class="coupon">
+                <div class="coupon_slider">
+                    <a href="">
+                        <img src="./img/logo01.png" alt="">
+                    </a>
+                    <h3>순수해서 더 진한 맛, 나뚜루</h3>
+                </div>
+            </section>
+
+
 
         </main>
         <footer>
