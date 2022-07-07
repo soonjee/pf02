@@ -43,10 +43,8 @@
 
 .header .header_bottom {
     display: flex;
-}
-
-.header .header_bottom {
     padding: 40px 0;
+    justify-content: space-between;
 }
 
 .header .header_bottom .container {
@@ -59,12 +57,10 @@
     margin: 0 auto 0 auto;
 }
 
-
 #searchForm input[type="text"] {
     background: transparent;
     outline: #333;
     width: 130px;
-    height: 23px;
     border-radius: 50px;
     font-size: 9px;
     font-weight: 100;
@@ -72,11 +68,11 @@
 
 #searchForm button {
     background: transparent;
-    /*  background: transparent; 투명해짐 */
     outline: none;
     border: none;
     font-size: 13px;
 }
+
 
 .header .gnb {
     padding: 16px 0;
@@ -159,20 +155,203 @@
 }
 
 .coupon {
+    position: relative;
     height: 700px;
     background-color: #006633;
     padding: 100px 0;
 }
 
-.coupon .coupon_slider {
+.coupon .container {
     width: 1200px;
     margin: 0 auto;
+    text-align: center;
+}
+
+.container .coupon_box figure {
+    margin: 0 auto;
+    width: 175px;
+    height: 90px;
+    margin-bottom: 25px;
 }
 
 
-.coupon_slider h3 {
-    margin-bottom: 30px;
-    font-size: 25px;
+.container .coupon_box p {
+    margin: 0 0 70px 0;
+    font-size: 23px;
     font-weight: 500;
     color: #fff;
+}
+
+.coupon_slider {
+    width: 590px;
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+    align-items: center;
+}
+
+.coupon_slider img {
+    margin: 0 auto 0 auto;
+}
+
+.coupon_control i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #fff;
+    font-size: 83px;
+}
+
+.coupon_control i:nth-child(1) {
+    margin: 0 0 0 -380px;
+}
+
+.coupon_control i:nth-child(2) {
+    margin: 0 0 0 380px;
+}
+
+.coupon .slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.coupon .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: #999;
+    border-radius: 20px;
+}
+
+.coupon .slick-dots li button {
+    display: none;
+}
+
+.coupon_service {
+    display: flex;
+    width: 325px;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+}
+
+
+.coupon_service p {
+    width: 240px;
+    padding: 18px 55px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #333;
+}
+
+.coupon_service i {
+    padding: 10px 15px;
+    margin-left: 24px;
+
+    font-size: 27px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.video .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 130px 0;
+    text-align: center;
+}
+
+.video .inner h2 {
+    margin-bottom: 80px;
+    font-size: 43px;
+    font-weight: 700;
+    color: #333;
+}
+
+.video .player {
+    width: 1200px;
+    height: 600px;
+    border-radius: 50px;
+}
+
+.pint {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.pint h2 {
+    margin-bottom: 80px;
+    font-size: 43px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.pint .container {
+    display: flex;
+    gap: 37px;
+    width: 1300;
+    margin-bottom: 80px;
+}
+
+.pint .box {
+    margin-bottom: 25px;
+}
+
+.pint .box img {
+    border-radius: 30px;
+}
+
+.pint .pint_info {
+    margin-bottom: 15px;
+}
+
+.pint .pint_info span:nth-child(1) {
+    color: #003333;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.pint .pint_info span:nth-child(2) {
+    color: #333;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.line_banner {
+    width: 1900px;
+    margin: 0 auto;
+}
+
+.cake {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.cake .container {
+    display: flex;
+    gap: 37px;
+    width: 1300;
+    padding: 80px 0;
+}
+
+.cake .box {
+    margin-bottom: 25px;
+}
+
+.cake .box img {
+    border-radius: 30px;
+}
+
+.cake .cake_info {
+    margin-bottom: 15px;
+}
+
+.cake .cake_info span {
+    color: #003333;
+    font-size: 17px;
+    font-weight: 700;
 }
