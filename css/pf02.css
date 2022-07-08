@@ -424,13 +424,11 @@
 
 
 .footer {
-    width: 1900px;
-    padding: 80px 0;
+    padding: 100px 0;
+    margin: 0 auto;
     background: #f1f1f1;
 }
 
 .footer .container {
-    width: 1400px;
-    margin: 0 auto;
     text-align: center;
 }
